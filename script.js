@@ -1,11 +1,11 @@
+// Initialize AOS (Animate On Scroll) library
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS animations
     AOS.init({
-        duration: 800,
-        once: true,
+        duration: 800,  // Duration of animation in milliseconds
+        once: true,     // Animation should happen only once
     });
 
-    // Add smooth scroll to anchor links
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
